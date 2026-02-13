@@ -11,10 +11,9 @@ This repository contains a program designed for performing final checks on Batte
 - [Requirements](#requirements)
 - [Setup](#setup)
 - [Usage](#usage)
-  - [1. Running the Streamlit Web App](#1-running-the-streamlit-web-app)
-  - [2. Running the Tkinter GUI](#2-running-the-tkinter-gui)
-  - [3. Processing Data](#3-processing-data)
-  - [4. Managing Test Results](#4-managing-test-results)
+  - [1. Running the Tkinter GUI](#1-running-the-tkinter-gui)
+  - [2. Processing Data](#2-processing-data)
+  - [3. Managing Test Results](#3-managing-test-results)
 - [Configuration](#configuration)
 - [Contributing](#contributing)
 - [License](#license)
@@ -34,7 +33,6 @@ This program is implemented in Python and supports both command-line and graphic
 
 ## Features
 
-- **Streamlit Web App**: A modern, web-based interface for interacting with the system.
 - **Tkinter GUI**: A desktop-based graphical user interface for local use.
 - **Data Processing Tools**: Scripts for analyzing and managing test results.
 - **Customizable Configurations**: JSON-based configuration files for production and RMA settings.
@@ -54,7 +52,6 @@ BMS_Final_Check/
 ├── Login.json                    # Login credentials/configuration
 ├── main.py                       # Main entry point for the program
 ├── README.md                     # Documentation file
-├── streamlit_app.py              # Streamlit web app interface
 ├── tkinter_gui.py                # Tkinter-based GUI interface
 ├── tv_tools.py                   # Utility tools for data processing
 ├── Complete_Pack_Info_dump/      # Folder for storing complete pack info
@@ -82,7 +79,6 @@ To run this program, you need the following:
   pip install -r requirements.txt
   ```
   If a `requirements.txt` file is not provided, ensure the following libraries are installed:
-  - `streamlit`
   - `tkinter` (built-in with Python)
   - `json`
   - Any other dependencies used in the scripts.
@@ -114,16 +110,8 @@ To run this program, you need the following:
 
 ## Usage
 
-### 1. Running the Streamlit Web App
 
-The Streamlit app provides a web-based interface for interacting with the system. To launch the app, run:
-```bash
-python streamlit_app.py
-```
-
-Once the app is running, open your browser and navigate to the URL provided in the terminal (usually `http://localhost:8501`).
-
-### 2. Running the Tkinter GUI
+### 1. Running the Tkinter GUI
 
 The Tkinter GUI provides a desktop-based graphical interface. To launch the GUI, run:
 ```bash
@@ -132,7 +120,7 @@ python tkinter_gui.py
 
 Follow the on-screen instructions to interact with the system.
 
-### 3. Processing Data
+### 2. Processing Data
 
 The `tv_tools.py` script includes utility functions for processing and analyzing test data. To use it, run:
 ```bash
@@ -141,7 +129,7 @@ python tv_tools.py
 
 You can modify the script to suit your specific data processing needs.
 
-### 4. Managing Test Results
+### 3. Managing Test Results
 
 - Place production test results in the `Test_Result_Dump_New/Production/` directory.
 - Place RMA test results in the `Test_Result_Dump_New/RMA/` directory.
